@@ -2,7 +2,9 @@ package secao09_estrutura_classe.exemplo01.entities;
 
 public class Product {
 
-    //private para não expor nenhum atributo
+    //private para não expor nenhum atributo, acessado somente na própria classe
+    //protect acessa no mesmo pacote e em subclasses
+    //public só não é acessado por classe de outro módulo
     private String name;
     private double price;
     private int quantity;
