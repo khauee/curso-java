@@ -10,24 +10,24 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Employee employee;
+        Employee employee;//Instaciação
 
         System.out.print("How many Employees will be registered? ");
         int num = sc.nextInt();
 
-        List<Employee> list = new ArrayList<>();
+        List<Employee> list = new ArrayList<>();//Criando a lista do tipo Employee
 
         for(int i=0; i<num; i++){
             System.out.printf("Employee #%d%n", i+1);
             System.out.print("Id: ");
             int id = sc.nextInt();
-            sc.nextLine();
+            sc.nextLine();//sempre após nextInt, nextDouble, para tirar \n
             System.out.print("Name: ");
             String name = sc.nextLine();
             System.out.print("Salary: ");
             double salary = sc.nextDouble();
-            employee = new Employee(id,name,salary);
-            list.add(employee);
+            employee = new Employee(id,name,salary);//criando um novo employee
+            list.add(employee);//adicionando na lista
         }
 
         System.out.print("Enter the employee id that will have salary increase: ");
@@ -35,10 +35,9 @@ public class Program {
         System.out.print("Enter the percentage: ");
         double percentage = sc.nextDouble();
 
-        for(Employee x : list){
-            if(x.getId()==find){
-                double newSalary= x.Increase(x.getSalary(), percentage);
-                x.setSalary(newSalary);
+        for(Employee x : list){//x é apenas o elemento atual da lista
+            if(x.getId()==find){//acho o id de acordo com o número escolhido
+                x.increase(percentage);//chamo o metodo de aumento
             }
 
         }
