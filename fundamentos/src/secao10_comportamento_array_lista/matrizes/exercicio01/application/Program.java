@@ -27,8 +27,19 @@ public class Program {
 
         for(int i=0; i<num1; i++){
             for(int j=0; j<num2; j++){
-                if(mat[i][j]==num){
-                    System.out.print(mat[i][j-1] + " " + mat[i-1][j] + " " + mat[i][j+1] + " " + mat[i+1][j]);
+                if(mat[i][j]==num){// 0|1
+                    if(j-1 >= 0) {
+                        System.out.print(mat[i][j - 1] + " ");// 0|0
+                    }
+                    if(j+1 < num2){
+                        System.out.print(mat[i][j+1] + " ");//0|2
+                    }
+                    if(i-1 >= 0) {
+                        System.out.print(mat[i-1][j] + " ");//-1|1
+                    }
+                    if(i+1 < num1){
+                        System.out.print(mat[i+1][j] + " ");//1|1
+                    }
                 }
             }
         }
