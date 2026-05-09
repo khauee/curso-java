@@ -1,9 +1,9 @@
-package secao12_enumeracao_composicao.composicao.exemplo01.application;
+package secao12_enumeracao_composicao.enumeracao.exemplo02.application;
 
-import secao12_enumeracao_composicao.composicao.exemplo01.entities.Department;
-import secao12_enumeracao_composicao.composicao.exemplo01.entities.HourContract;
-import secao12_enumeracao_composicao.composicao.exemplo01.entities.Worker;
-import secao12_enumeracao_composicao.composicao.exemplo01.entitiesenums.WorkerLevel;
+import secao12_enumeracao_composicao.enumeracao.exemplo02.entities.Department;
+import secao12_enumeracao_composicao.enumeracao.exemplo02.entities.HourContract;
+import secao12_enumeracao_composicao.enumeracao.exemplo02.entities.Worker;
+import secao12_enumeracao_composicao.enumeracao.exemplo02.entitiesenums.WorkerLevel;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

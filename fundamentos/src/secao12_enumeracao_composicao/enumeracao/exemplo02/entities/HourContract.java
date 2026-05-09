@@ -1,4 +1,4 @@
-package secao12_enumeracao_composicao.composicao.exemplo01.entities;
+package secao12_enumeracao_composicao.enumeracao.exemplo02.entities;
 
 import java.util.Date;
 
