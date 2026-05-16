@@ -1,5 +1,6 @@
 package secao12_enumeracao_composicao.exercicio.entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Client {
@@ -39,5 +40,13 @@ public class Client {
 
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
+    }
+
+    @Override
+    public String toString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        return name + " "
+                + "(" +sdf.format(birthDate) + ")" + " - "
+                + email;
     }
 }
