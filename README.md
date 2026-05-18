@@ -15,7 +15,7 @@ O objetivo é consolidar os fundamentos de programação, desde a lógica básic
 
 ## 📚 Tópicos Cobertos
 - [x] **Lógica de Programação:** Algoritmos, sintaxe e estruturas de controle.
-- [ ] **POO Fundamental:** Classes, atributos, métodos, construtores e encapsulamento.
+- [x] **POO Fundamental:** Classes, atributos, métodos, construtores e encapsulamento.
 - [ ] **POO Avançada:** Herança, polimorfismo, interfaces e classes abstratas.
 - [ ] **Estrutura de Dados:** Listas, arrays, enumerações e composição.
 - [ ] **Tratamento de Exceções:** Robustez e segurança no código.
